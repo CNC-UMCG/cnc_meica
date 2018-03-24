@@ -3,10 +3,10 @@ From: CNC-UMCG/cnc_base
 
 
 %post
-	sudo add-apt-repository universe
-	sudo apt-get update -y
+	add-apt-repository universe
+	apt-get update -y
 	
-	sudo apt-get install -y tcsh xfonts-base python-qt4       \
+	apt-get install -y tcsh xfonts-base python-qt4       \
         	                gsl-bin netpbm gnome-tweak-tool   \
                 	        libjpeg62 xvfb xterm vim curl     \
                         	gedit evince                      \
@@ -24,6 +24,6 @@ From: CNC-UMCG/cnc_base
 	mkdir $R_LIBS
 	echo 'export R_LIBS=$HOME/R' >> ~/.bashrc
 	curl -O https://afni.nimh.nih.gov/pub/dist/src/scripts_src/@add_rcran_ubuntu.tcsh
-	sudo tcsh @add_rcran_ubuntu.tcsh
+	tcsh @add_rcran_ubuntu.tcsh
 
 	rPkgsInstall -pkgs ALL
