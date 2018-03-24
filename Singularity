@@ -3,6 +3,7 @@ From: CNC-UMCG/cnc_base
 
 
 %post
+	apt-get install -y software-properties-common
 	add-apt-repository universe
 	apt-get update -y
 	
