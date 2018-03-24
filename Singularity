@@ -3,6 +3,7 @@ From: CNC-UMCG/cnc_base
 
 
 %post
+	apt-get update -y
 	apt-get install -y afni
 
 # %runscript
