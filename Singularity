@@ -12,11 +12,13 @@ From: CNC-UMCG/cnc_base
                 	        libjpeg62 xvfb xterm vim curl     \
                         	gedit evince                      \
 	                        libxm4 build-essential	
-				
+	
+	mkdir /usr/abin
 	cd
 	curl -O https://afni.nimh.nih.gov/pub/dist/bin/linux_ubuntu_16_64/@update.afni.binaries
-	tcsh @update.afni.binaries -package linux_ubuntu_16_64  -do_extras
+	tcsh @update.afni.binaries -package linux_ubuntu_16_64  -do_extras -bindir /usr/abin
 	export R_LIBS=$HOME/R
+	export PATH=$PATH:/usr/abin
 
 	bash
 	################
