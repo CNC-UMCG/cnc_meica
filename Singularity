@@ -18,13 +18,16 @@ From: CNC-UMCG/cnc_base
 	tcsh @update.afni.binaries -package linux_ubuntu_16_64  -do_extras
 	export R_LIBS=$HOME/R
 
-	source ~/.bashrc
+	bash
 	################
 	# Install R   #
 	################
 	
 	mkdir $R_LIBS
 	echo 'export R_LIBS=$HOME/R' >> ~/.bashrc
+	
+	bash
+	
 	curl -O https://afni.nimh.nih.gov/pub/dist/src/scripts_src/@add_rcran_ubuntu.tcsh
 	tcsh @add_rcran_ubuntu.tcsh
 
