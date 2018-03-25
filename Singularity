@@ -17,7 +17,8 @@ From: CNC-UMCG/cnc_base
 	curl -O https://afni.nimh.nih.gov/pub/dist/bin/linux_ubuntu_16_64/@update.afni.binaries
 	tcsh @update.afni.binaries -package linux_ubuntu_16_64  -do_extras
 	export R_LIBS=$HOME/R
-	
+
+	source ~/.bashrc
 	################
 	# Install R   #
 	################
