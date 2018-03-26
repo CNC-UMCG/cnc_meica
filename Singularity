@@ -1,7 +1,9 @@
 Bootstrap: shub
 From: CNC-UMCG/cnc_base
 
-
+%environment
+        PATH=$PATH:/usr/abin
+        export $PATH
 %post
 	apt-get install -y software-properties-common
 	add-apt-repository universe
