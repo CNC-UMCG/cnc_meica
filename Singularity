@@ -33,4 +33,4 @@ From: CNC-UMCG/cnc_base
 	curl -O https://afni.nimh.nih.gov/pub/dist/src/scripts_src/@add_rcran_ubuntu.tcsh
 	tcsh @add_rcran_ubuntu.tcsh
 
-	#TODO:: /root/abin/rPkgsInstall -pkgs ALL
+	/usr/abin/rPkgsInstall -pkgs ALL
