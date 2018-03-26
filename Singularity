@@ -36,3 +36,6 @@ From: CNC-UMCG/cnc_base
 	tcsh @add_rcran_ubuntu.tcsh
 
 	/usr/abin/rPkgsInstall -pkgs ALL
+	
+%runscript
+        exec meica.py "$@"
