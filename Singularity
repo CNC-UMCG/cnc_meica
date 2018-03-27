@@ -1,6 +1,9 @@
 Bootstrap: shub
 From: CNC-UMCG/cnc_base
 
+%runscript
+        exec meica.py "$@"
+
 %environment
         PATH=$PATH:/usr/abin
         export $PATH
@@ -37,5 +40,3 @@ From: CNC-UMCG/cnc_base
 
 	/usr/abin/rPkgsInstall -pkgs ALL
 	
-%runscript
-        exec meica.py "$@"
