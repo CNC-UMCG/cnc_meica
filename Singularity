@@ -18,6 +18,10 @@ From: CNC-UMCG/cnc_base
                         	gedit evince                      \
 	                        libxm4 build-essential	
 	
+	# install SciPy
+	apt-get install -y python-numpy python-scipy python-matplotlib \
+	 	  	   ipython ipython-notebook \
+			   python-pandas python-sympy python-nose
 	mkdir /usr/abin
 	cd
 	curl -O https://afni.nimh.nih.gov/pub/dist/bin/linux_ubuntu_16_64/@update.afni.binaries
